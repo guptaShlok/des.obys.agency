@@ -8,6 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primaryWhite: {
+          light: "#F2F2F2", // Example light purple
+          DEFAULT: "#F2F2F2", // Example default purple
+        },
+        primaryBlack: {
+          light: "#17191A", // Example light green
+          DEFAULT: "#17191A", // Example default green
+        },
+        primaryGrey: {
+          light: "#858686", // Example light green
+          DEFAULT: "#858686", // Example default green
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
