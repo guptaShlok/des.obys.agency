@@ -9,7 +9,7 @@ const FirstPage = () => {
   return (
     <>
       <div className="w-full h-[110vh] bg-primaryWhite-light flex mb-[100vh] justify-between text-primaryBlack">
-        <div className="flex flex-col justify-start items-center gap-2 h-full w-full border-r-[1px] border-b-[1px] border-primaryBlack pt-7 pl-4 ">
+        <div className="flex flex-col justify-start items-center gap-2 h-full w-[50vw] border-r-[1px] border-b-[1px] border-primaryBlack pt-7 pl-4 ">
           <div className="flex w-[97%] justify-start items-start h-auto ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const FirstPage = () => {
             <span>Design Education Series ® by Obys ® </span>
           </div>
         </div>
-        <div className="flex items-start flex-col w-full h-full  border-b-[1px] border-primaryBlack">
+        <div className="flex items-start flex-col w-[50vw] h-full  border-b-[1px] border-primaryBlack">
           <div className="flex justify-between px-5 w-full h-[7%] border-b-[1px] border-primaryBlack">
             <div className="flex items-start justify-center gap-5 text-lg font-normal pt-5">
               <div className="flex items-center gap-1 justify-center ">
