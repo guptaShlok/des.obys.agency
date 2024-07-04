@@ -94,6 +94,7 @@ const FirstPage = () => {
                 <div>About</div>
               </div>
             </div>
+            
             <div className=" flex items-center justify-center gap-4">
               <div className=" ">
                 <svg
@@ -117,10 +118,44 @@ const FirstPage = () => {
               </div>
             </div>
           </div>
-          <div></div>
-          <div></div>
+        
+          <div className="flex justify-between px-5 w-full h-[7%] border-b-[1px] border-primaryBlack flex items-center gap-1 justify-center  ">
+          About Series:</div>
+         <div>
+          <div>
+          <div >
+            <p>
+              Seasons:
+            </p>
+            <div>
+            <span className="mr-5">01</span>
+            Season (Typography Principles)
+            </div>
+            <div>
+            <span className="mr-5">02</span>
+            Season (Colors Combinations)
+            </div>
+            <div>
+            <span className="mr-5">03</span>
+            Season (Grids)
+            </div>
+          </div>
+          </div>
+          <div className="">
+            <p className="is-started is-complete">
+            Discover, Study, Have Fun: 
+            <br/>
+            All-in-One Learning!
+            </p>
+            <p className="is-started is-complete">©2024</p>
+          </div>
+         </div>
+          
+
+          
         </div>
       </div>
+      
     </>
   );
 };
