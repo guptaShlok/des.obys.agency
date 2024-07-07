@@ -8,7 +8,7 @@ import { svgPathForRotor } from "../utils/svgPaths";
 const FirstPage = () => {
   return (
     <>
-      <div className="w-full h-[140vh] bg-primaryWhite-light flex mb-[100vh] justify-between text-[#17191A]">
+      <div className="w-full h-[140vh] bg-primaryWhite-light flex justify-between text-[#17191A]">
         <div className="flex flex-col justify-start items-center gap-2 h-full w-[50vw] border-r-[1px] border-b-[1px] border-primaryBlack pt-7 pl-4 ">
           <div className="flex w-[97%] gap-2 justify-start items-start h-auto ">
             <svg
