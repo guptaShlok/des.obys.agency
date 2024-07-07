@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+video.custom-video {
+    width: 80%;  /* Set width to 80% of the parent */
+    height: auto;  /* Maintain aspect ratio */
+    display: block;  /* Ensure it’s a block element */
+    margin: 20px auto;  /* Center it horizontally with margin */
+    border: 2px solid #ccc;  /* Add a border */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    transition: transform 0.3s ease-in-out;  /* Smooth transition for transform */
+}
+
+/* Specific styles for data attributes */
+video[data-scroll-speed="1.25"] {
+    border-color: #ff6347;  /* Change border color */
+}
+
+video[data-start="top bottom+=100"] {
+    position: relative;
+    top: 20px;  /* Basic positioning for visual effect */
+}
+
+video[data-end="bottom top-=100"] {
+    position: relative;
+    bottom: 20px;  /* Basic positioning for visual effect */
+}
+
+video[style*="translate3d"] {
+    transform: translate3d(0px, -15.8344px, 0px);  /* Apply translate3d */
+}
+
+video[data-component="lazyload"] {
+    opacity: 0.5;  /* Slight transparency for lazy loaded state */
+    transition: opacity 0.5s ease-in-out;  /* Smooth transition for opacity */
+}
+
+video[data-ll-status="loaded"] {
+    opacity: 1;  /* Fully opaque when loaded */
+}
+
+video[loop="loop"] {
+    outline: 3px dashed #4caf50;  /* Dashed outline to indicate looping */
+}
+
+video[mutes="true"] {
+    filter: grayscale(100%);  /* Grayscale effect for muted video */
+}

@@ -5,6 +5,7 @@ import { svgPathForE } from "../utils/svgPaths";
 import { svgPathForS } from "../utils/svgPaths";
 import { svgPathForLogo } from "../utils/svgPaths";
 import { svgPathForRotor } from "../utils/svgPaths";
+
 const FirstPage = () => {
   return (
     <>
