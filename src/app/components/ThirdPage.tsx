@@ -1,69 +1,47 @@
 "use client";
 
+import { svgPathForLogo } from "../utils/svgPaths";
+
 const TypographySection = () => {
-  const sectionStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'bottom',
-    padding: '20px',
-    backgroundColor: '#f0f0f0',
-  };
-
-  const leftStyle = {
-    display: 'flex',
-    alignItems: 'flex-end',
-  };
-
-  const middleStyle = {
-    display: 'flex',
-    alignItems: 'bottom',
-  };
-
-  const rightStyle = {
-    display: 'flex',
-    alignItems: 'flex-end',
-  };
-
-  const badgeStyle = {
-    padding: '5px 10px',
-    border: '1px solid black',
-    borderRadius: '5px',
-    marginLeft: '10px',
-  };
-
-  const priceStyle = {
-    textDecoration: 'line-through',
-    color: 'gray',
-    marginRight: '10px',
-  };
-
   return (
     <div>
-      <div style={sectionStyle}>
-        <div style={leftStyle}>
+      <div className="flex justify-between items-end px-5 py-20 pr-10 pb-4 border-t border-primaryBlack-light mt-40 bg-gray-100">
+        <div className="flex items-end w-[20%] ">
           <span>2024 / 6+ / 01 Season / 03h 45m</span>
         </div>
-          <div style={middleStyle}  className=" flex flex-row flex-col">
-            <div style={middleStyle} className="items-end flex-grow flex ">
-            <span style={badgeStyle}>Preorder</span>
-            <span style={badgeStyle} >New</span>
+        <div className="flex flex-col items-start  w-[60%] pl-20 font-normal">
+          <div className="flex items-end justify-start mb-2">
+            <span className="px-2 py-0.5 border border-black rounded-lg ml-2">
+              Preorder
+            </span>
+            <span className="px-2 py-0.5 border border-black rounded-lg ml-2">
+              New
+            </span>
           </div>
-          <div style={middleStyle}>
-            <h1 >Typography Principles</h1>
+          <div className="flex text-6xl text-primaryBlack">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="49"
+              fill="none"
+              viewBox="0 0 139 139"
+              data-letter="logo"
+            >
+              <path
+                fill="currentColor"
+                stroke="currentColor"
+                d={svgPathForLogo}
+              ></path>
+            </svg>
+            <h1 className=" tracking-tighter">Typography Principles</h1>
           </div>
-          
         </div>
-
-        <div style={rightStyle}>
-        <span style={priceStyle}>$150</span>
-        <span className="flex items-center h2 mb-0">$75 / Preorder</span>
+        <div className="flex items-end justify-start text-2xl w-[25%]">
+          <span className="line-through text-gray-500 mr-2">$150</span>
+          <span className="flex items-center mb-0">$75 / Preorder</span>
         </div>
+      </div>
+      <img src={`./pictures/thirdpgbg.jpg`} alt="img 2" />
     </div>
-      <img src="https://deso-strapi-cms.onrender.com/uploads/1_season_1_widescreen_v3_d40331483a.jpg" alt="img 2" />
-    </div>
-    
-
-    
   );
 };
 

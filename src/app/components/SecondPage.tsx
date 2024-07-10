@@ -3,7 +3,7 @@ import React from "react";
 
 const SecondPage = () => {
   return (
-    <div className="min-h-screen relative w-full p-8 bg-gray-50 text-black">
+    <div className="min-h-screen relativew-full p-8 text-black">
       <div className="w-full mx-auto relative flex flex-col">
         <div className="flex flex-col gap-16">
           <p className="text-6xl font-medium ">
@@ -22,7 +22,7 @@ const SecondPage = () => {
 
         <div className=" w-full flex mt-20 justify-end items-start">
           <div className="flex w-[50%] justify-around text-lg leading-relaxed">
-            <div className=" text-sm w-1/3 flex flex-col justify-evenly gap-10 items-start">
+            <div className=" text-sm w-[40%] flex flex-col justify-evenly gap-8 items-start">
               Over the past 5 years, Obys has released 3 educational projects
               (websites) that have become quite popular within the design
               community. These websites have been visited over 1 million times.
