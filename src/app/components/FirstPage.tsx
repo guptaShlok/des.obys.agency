@@ -111,7 +111,7 @@ const FirstPage = () => {
                     fill="currentColor"
                     fill-rule="evenodd"
                     d={svgPathForRotor}
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
               </div>
