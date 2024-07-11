@@ -5,6 +5,7 @@ import { svgPathForE } from "../utils/svgPaths";
 import { svgPathForS } from "../utils/svgPaths";
 import { svgPathForLogo } from "../utils/svgPaths";
 import { svgPathForRotor } from "../utils/svgPaths";
+import MaskText from "../utils/textMaskAnimation";
 
 const FirstPage = () => {
   return (
@@ -76,7 +77,7 @@ const FirstPage = () => {
             </svg>
           </div>
           <div className="w-full flex items-center justify-start pt-2 font-normal text-[#17191A] text-3xl pl-2">
-            <span>Design Education Series ® by Obys ® </span>
+            <MaskText phrases={["Design Education Series ® by Obys ® "]} />
           </div>
         </div>
 
@@ -122,50 +123,55 @@ const FirstPage = () => {
           </div>
 
           <div className=" px-5 w-full h-[5%] border-b-[1px] border-primaryBlack flex items-center justify-start  ">
-            About Series:
+            <MaskText phrases={["About Series:"]} />
           </div>
 
           <div className="px-5 flex flex-col justify-between h-full w-full">
             <div className="flex pt-2 justify-between w-full ">
               <div className="flex flex-col items-start ">
-                <p>Seasons:</p>
-                <div>
-                  <span className="mr-2">01</span>
-                  Season (Typography Principles)
-                </div>
-                <div>
-                  <span className="mr-2">02</span>
-                  Season (Colors Combinations)
-                </div>
-                <div>
-                  <span className="mr-2">03</span>
-                  Season (Grids)
-                </div>
+                <MaskText
+                  className=" flex flex-col"
+                  phrases={[
+                    "Seasons:",
+                    "Seasons (Typography Principles)",
+                    "Seasons (Colors Combinations)",
+                    "Seasons (Grids)",
+                  ]}
+                />
               </div>
               <div className="">
-                <p className="is-started is-complete">
-                  Discover, Study, Have Fun:
-                  <br />
-                  All-in-One Learning!
-                </p>
+                <MaskText
+                  className=" flex flex-col"
+                  phrases={[
+                    "Discover, Study, Have Fun:",
+                    "All-in-One Learning!",
+                  ]}
+                />
               </div>
               <div>
-                <p className="is-started is-complete">©2024</p>
+                <MaskText phrases={["©2024"]} />
               </div>
             </div>
             <div>
               <div className="flex justify-between items-end">
                 <div className="flex flex-col text-2xl justify-center items-start">
-                  <span>Original Series by</span>
-                  <span>Obys® about the main</span>
-                  <span>design principles</span>
+                  <MaskText
+                    className="flex flex-col"
+                    phrases={[
+                      "Original Series by",
+                      "Obys® about the main",
+                      "design principles",
+                    ]}
+                  />
                 </div>
                 <div>
-                  <span>(01:42)</span>
+                  <span>
+                    <MaskText phrases={["(01:42)"]} />
+                  </span>
                 </div>
                 <div>
                   <span className=" border-b-[1px] border-primaryBlack">
-                    Watch Trailer
+                    <MaskText phrases={["Watch Trailer"]} />
                   </span>
                 </div>
               </div>
