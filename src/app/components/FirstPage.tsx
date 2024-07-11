@@ -6,7 +6,7 @@ import { svgPathForS } from "../utils/svgPaths";
 import { svgPathForLogo } from "../utils/svgPaths";
 import { svgPathForRotor } from "../utils/svgPaths";
 import MaskText from "../utils/textMaskAnimation";
-
+import Button from "../utils/Button";
 const FirstPage = () => {
   return (
     <>
@@ -116,8 +116,10 @@ const FirstPage = () => {
                   ></path>
                 </svg>
               </div>
-              <div className=" border border-primaryBlack px-3 py-1 rounded-lg bg-primaryBlack text-primaryWhite">
-                Log in
+              <div className="hover:text-primaryBlack-light transition-all delay-100 duration-300 inline-block border border-primaryBlack rounded-lg bg-primaryBlack-light  text-primaryWhite">
+                <Button backgroundColor="#F2F2F2">
+                  <span className=" z-10">Log in</span>{" "}
+                </Button>
               </div>
             </div>
           </div>

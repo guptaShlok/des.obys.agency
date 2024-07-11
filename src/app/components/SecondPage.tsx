@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import Button from "../utils/Button";
 const SecondPage = () => {
   return (
     <div className="min-h-screen relativew-full p-8 text-black">
@@ -43,16 +43,13 @@ const SecondPage = () => {
 
             {/* Projects */}
             <ul className="space-y-2 w-1/2">
-              <h2 className="text-base border-b pb-2 border-primaryBlack-light font-bold">
+              <h2 className="text-base border-b pb-2 border-primaryBlack-light">
                 Projects:
               </h2>
               <li>
-                <a
-                  href="#"
-                  className="block text-sm border-b pb-2 border-primaryBlack-light "
-                >
-                  Typography Principles (2019) ↗
-                </a>
+                <div className="hover:text-primaryWhite-light transition-all delay-100 duration-300 border-b border-primaryBlack-light bg-primaryWhite-light  text-primaryBlack flex items-start justify-start text-base">
+                  <Button>Typography Principles (2019) ↗</Button>
+                </div>
               </li>
               <li>
                 <a
